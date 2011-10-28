@@ -46,6 +46,7 @@
             <section>Custom Links</section>
         </sections>
     </layouts>
+    <nameFieldLabel><!-- Project Time Name --></nameFieldLabel>
     <startsWith>Consonant</startsWith>
     <validationRules>
         <errorMessage><!-- The hours entered cannot be negative. --></errorMessage>

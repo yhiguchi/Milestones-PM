@@ -84,13 +84,13 @@ jQuery(document).ready(function() {
 
 <apex:outputPanel id="projectSummary_noProjects" rendered="{!projects.size == 0}">
 
-    <h1>No projects!</h1>
+    <h1>{!$Label.NoProjects}</h1>
      
 </apex:outputPanel>
 
 <apex:outputPanel id="mySearch">
 
-    <apex:pageBlock title="Quick Search - Project Components" >
+    <apex:pageBlock title="{!$Label.QuickSearch}" >
         <apex:inputText value="{!searchText}" styleClass="quickSearchText" id="MileStoneSearchInput"/>
      <apex:actionStatus id="executeStatus">
          <apex:facet name="start">
@@ -100,7 +100,7 @@ jQuery(document).ready(function() {
          </apex:facet>
          <apex:facet name="stop"  >
              <apex:outputPanel id="executeStatusNotworking" layout="none">
-                 <apex:commandButton value="Search" id="searchProjects" action="{!searchProjects}" style="font-size: 20px;" status="executeStatus" rerender="searchResults" />
+                 <apex:commandButton value="{!$Label.SummarySearch}" id="searchProjects" action="{!searchProjects}" style="font-size: 20px;" status="executeStatus" rerender="searchResults" />
              </apex:outputPanel>
          </apex:facet>
      </apex:actionStatus>

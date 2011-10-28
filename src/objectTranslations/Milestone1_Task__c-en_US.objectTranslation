@@ -238,6 +238,7 @@
             <section>Metrics: Hours &amp; Expenses</section>
         </sections>
     </layouts>
+    <nameFieldLabel><!-- Project Task Name --></nameFieldLabel>
     <startsWith>Consonant</startsWith>
     <validationRules>
         <errorMessage><!-- You cannot mark a completed task as blocked. --></errorMessage>
